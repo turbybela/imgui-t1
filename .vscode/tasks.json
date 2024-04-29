@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cppbuild",
+            "command": "D:\\MySys\\mingw64\\bin\\g++.exe",
+            "type": "cppbuild",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-I${workspaceFolder}\\include",
+                "${workspaceFolder}\\src\\*.c*",
+                "-lglfw3",
+                "-lopengl32",
+                "-o",
+                "${workspaceFolder}\\bin\\myimgui.exe",
+                "-g",
+                "-Werror",
+            ],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        }
+    ]
+}
